@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import ItemList from "./ItemList";
 import { useParams } from "react-router-dom";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "../firebase/firebase"
 
 const ItemListContainer = () => {
@@ -17,6 +17,9 @@ const ItemListContainer = () => {
         useEffect(() => {
 
             const productosRef = collection(db, "productos");
+
+            const q = categoria ? query(productosRef, where("categoria", "==", categoria)) : productosRef;
+
             getDocs(productosRef)
 
                 .then((resp) => {
