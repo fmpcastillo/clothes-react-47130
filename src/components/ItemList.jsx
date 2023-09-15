@@ -1,6 +1,6 @@
 import React from "react";
 import Item from "./Item";
-import { mayus } from "../llamarDatos/mayus"
+import { mayus } from "../Upper/mayus"
 
 const ItemList = ( {productos, titulo} ) => {
     return (

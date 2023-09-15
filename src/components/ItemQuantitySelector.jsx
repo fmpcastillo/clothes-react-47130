@@ -1,10 +1,6 @@
 import { useState } from "react";
 
-
-const ItemCount = ( {cantidad, handleRestar, handleSumar, handleAgregar} ) => {
-
-    
-
+const ItemQuantitySelector = ({ cantidad, handleRestar, handleSumar, handleAgregar }) => {
 
     return (
         <div>
@@ -17,6 +13,6 @@ const ItemCount = ( {cantidad, handleRestar, handleSumar, handleAgregar} ) => {
         </div>
     )
 
-    
+
 }
-export default ItemCount 
+export default ItemQuantitySelector
