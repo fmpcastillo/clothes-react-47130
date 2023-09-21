@@ -94,6 +94,16 @@
     color: white;
 }
 
+ .finalizar {
+    text-decoration: none;
+    background-color: var(--clr-main);
+    color: white;
+    padding: .5rem;
+    width: max-content;
+    border-radius: .5rem;
+    transition: .2s;
+}
+
 .producto-detalle {
     padding-block: 2rem;
     display: grid;

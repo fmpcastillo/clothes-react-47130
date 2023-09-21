@@ -3,6 +3,7 @@ import React, { useContext, useState } from "react";
 import ItemCount from "./ItemQuantitySelector";
 import { Cart } from "./context/Cart";
 
+
 const ItemDetail = ( {item} ) => {
 
     const {carrito, agregarAlCarrito } = useContext(Cart);
@@ -18,7 +19,6 @@ const ItemDetail = ( {item} ) => {
     const handleSumar = () => {
         cantidad < item.stock && setCantidad (cantidad + 1)
     }
-    
 
     return (
         <div className="container">
@@ -35,6 +35,7 @@ const ItemDetail = ( {item} ) => {
                      handleRestar={handleRestar} 
                      handleAgregar={() => { agregarAlCarrito(item, cantidad)}}
                      />
+    
                 </div>
             </div>
         </div>    

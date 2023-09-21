@@ -13,6 +13,5 @@ const ItemQuantitySelector = ({ cantidad, handleRestar, handleSumar, handleAgreg
         </div>
     )
 
-
 }
 export default ItemQuantitySelector
